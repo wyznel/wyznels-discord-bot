@@ -1,3 +1,15 @@
+const express = require("express")
+const app = express()
+
+app.get("/", (req, res) => {
+  res.send("hopefully this works!")
+})
+
+app.listen(3000, () => {
+  console.log("Project is ready!")
+})
+// This is for the 24/7 bot requirements.
+
 const Discord = require('discord.js');
 
 const bot = new Discord.Client();
